@@ -15,8 +15,27 @@
 }
 
 .number {
-    margin: 0 -0.2rem 0.5rem -0.2rem;
-    font-size: 6.5rem;
+    box-shadow: 0.5px 0 4px gray;
+}
+
+.zero {
+    border: 1rem solid white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin: 0 -0.35rem 0.5rem -0.35rem;
+}
+
+.zero1 {
+    z-index: 1;
+}
+
+.one {
+    height: 4rem;
+    width: 1rem;
+    background-color: white;
+    z-index: 2;
+    border-radius: 0.1rem;
 }
 
 p {
@@ -26,25 +45,13 @@ p {
 }
 
 .DAYS {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
 }
 
 .CSS-CHALLENGE {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .item {
-    margin: -0.5rem 0.2rem -0.5rem 0;
-}
-
-.zero {
-    border: 1rem solid white;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-}
-
-.zero1 {
-    z-index: 1;
-    box-shadow: 0.5px 0 3px lightgray;
+    margin: -0.5rem 0 -0.5rem 0;
 }
