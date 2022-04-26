@@ -1,0 +1,10 @@
+.box {
+    background-color: blueviolet;
+    width: 17.5rem;
+    height: 17.5rem;
+    border-radius: 0.33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
