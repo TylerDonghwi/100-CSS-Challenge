@@ -1,0 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+.box {
+    width: 17.5rem;
+    height: 17.5rem;
+    border-radius: 0.33rem;
+    background: linear-gradient(45deg, #43389F 0%, #4ec6ca 100%);
+}
