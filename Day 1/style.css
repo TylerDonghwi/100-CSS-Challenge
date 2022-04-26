@@ -15,7 +15,7 @@
 }
 
 .number {
-    margin: 0 -0.5rem -1.5rem -0.5rem;
+    margin: 0 -0.2rem 0.5rem -0.2rem;
     font-size: 6.5rem;
 }
 
@@ -34,5 +34,17 @@ p {
 }
 
 .item {
-    margin: -0.5rem 0 -0.5rem 0;
+    margin: -0.5rem 0.2rem -0.5rem 0;
+}
+
+.zero {
+    border: 1rem solid white;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+.zero1 {
+    z-index: 1;
+    box-shadow: 0.5px 0 3px lightgray;
 }
