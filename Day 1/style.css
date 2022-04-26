@@ -30,11 +30,22 @@
     z-index: 1;
 }
 
-.one {
+.one1 {
     height: 4rem;
     width: 1rem;
     background-color: white;
     z-index: 2;
+    border-radius: 0.1rem;
+}
+
+.one2 {
+    position: absolute;
+    height: 1.6rem;
+    width: 0.8rem;
+    background-color: white;
+    z-index: 1;
+    left: 4.8rem;
+    transform: rotate(50deg);
     border-radius: 0.1rem;
 }
 
