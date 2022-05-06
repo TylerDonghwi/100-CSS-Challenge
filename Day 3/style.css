@@ -76,6 +76,8 @@
     background-color: #c8b963;
     width: 6rem;
     height: 3rem;
+    transform: skew(90deg, 0);
+    transform-origin: top left;
     animation: shadow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -85,8 +87,11 @@
     10% {
         opacity: 1;
     }
-    85% {
+    75% {
         opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
 
@@ -137,14 +142,17 @@
 }
 
 @keyframes shadow {
-    20% {
+    30% {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+        transform: skew(50deg, 0);
     }
     90% {
         clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+        transform: skew(-70deg, 0);
     }
-    95% {
+    100% {
         clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+        transform: skew(90deg, 0);
     }
 }
 
