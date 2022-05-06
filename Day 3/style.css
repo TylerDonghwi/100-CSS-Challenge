@@ -22,7 +22,7 @@
     }
     
     .ground {
-        height: 60px;
+        height: 4rem;
         width: 100%;
         position: absolute;
         bottom: 0;
@@ -38,6 +38,32 @@
         width: 2rem;
         border-radius: 50%;
         animation: sun;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+    .left-pyr {
+        position: absolute;
+        bottom: 4rem;
+        left: 2rem;
+        width: 6rem;
+        height: 3.5rem;
+        background: #F4F4F4;
+        clip-path: polygon(0% 100%, 60% 100%, 50% 0%);
+        animation: pyramid1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+    .right-pyr {
+        position: absolute;
+        bottom: 4rem;
+        left: 2rem;
+        width: 6rem;
+        height: 3.5rem;
+        background: #F4F4F4;
+        clip-path: polygon(60% 100%, 100% 100%, 50% 0%);
+        animation: pyramid2;
         animation-duration: 5s;
         animation-iteration-count: infinite;
     }
@@ -69,6 +95,30 @@
         }
         100% {
             top: 1.5rem;
-            left: 9rem;
+            left: 10rem;
+        }
+    }
+    
+    @keyframes pyramid1 {
+        from {
+            background-color: #F4F4F4;
+        }
+        50% {
+            background-color: #F4F4F4;
+        }
+        to {
+            background-color: lightgray;
+        }
+    }
+    
+    @keyframes pyramid2 {
+        from {
+            background-color: lightgray;
+        }
+        20% {
+            background-color: lightgrey;
+        }
+        to {
+            background-color: #f4f4f4;
         }
     }
