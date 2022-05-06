@@ -16,8 +16,9 @@
         border-radius: 50%;
         clip-path: circle(5rem at 5rem 5rem);
         animation: dark;
-        animation-duration: 7s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
+        opacity: 0;
     }
     
     .ground {
@@ -28,17 +29,43 @@
         background-color: #F0DE75;
     }
     
+    .sun {
+        position: absolute;
+        top: 1rem;
+        left: -2rem;
+        background-color: #FFEF00;
+        aspect-ratio: 1 / 1;
+        width: 2rem;
+        border-radius: 50%;
+        animation: sun;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    
     @keyframes dark {
+        10% {
+            opacity: 1;
+        }
+        85% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes sun {
         from {
-            opacity: 1;
+            top: 1rem;
+            left: -2rem;
         }
-        60% {
-            opacity: 1;
+        10% {
+            top: 1rem;
+            left: 1rem;
         }
-        80% {
-            opacity: 0;
+        30% {
+            top: 1rem;
+            left: 1rem;
         }
-        to {
-            opacity: 1;
+        100% {
+            top: 1rem;
+            left: 9rem;
         }
     }
