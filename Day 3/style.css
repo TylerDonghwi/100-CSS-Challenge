@@ -1,124 +1,152 @@
-    .box {
-        background-color: rgb(32, 13, 49);
-        width: 17.5rem;
-        height: 17.5rem;
-        border-radius: 0.33rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.box {
+    background-color: rgb(32, 13, 49);
+    width: 17.5rem;
+    height: 17.5rem;
+    border-radius: 0.33rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sky {
+    position: relative;
+    background-color: #7DDFFC;
+    aspect-ratio: 1 / 1;
+    width: 10rem;
+    border-radius: 50%;
+    clip-path: circle(5rem at 5rem 5rem);
+    animation: dark;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+
+.ground {
+    height: 4rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #F0DE75;
+}
+
+.sun {
+    position: absolute;
+    top: 1rem;
+    left: -2rem;
+    background-color: #FFEF00;
+    aspect-ratio: 1 / 1;
+    width: 2rem;
+    border-radius: 50%;
+    animation: sun;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.left-pyr {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    width: 6rem;
+    height: 3.5rem;
+    background: #F4F4F4;
+    clip-path: polygon(0% 100%, 60% 100%, 50% 0%);
+    animation: pyramid1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.right-pyr {
+    position: absolute;
+    bottom: 4rem;
+    left: 2rem;
+    width: 6rem;
+    height: 3.5rem;
+    background: #F4F4F4;
+    clip-path: polygon(60% 100%, 100% 100%, 50% 0%);
+    animation: pyramid2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.shadow {
+    position: absolute;
+    bottom: 1rem;
+    left: 2rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    background-color: #c8b963;
+    width: 6rem;
+    height: 3rem;
+    animation: shadow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dark {
+    10% {
+        opacity: 1;
     }
-    
-    .sky {
-        position: relative;
-        background-color: #7DDFFC;
-        aspect-ratio: 1 / 1;
-        width: 10rem;
-        border-radius: 50%;
-        clip-path: circle(5rem at 5rem 5rem);
-        animation: dark;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-        opacity: 0;
+    85% {
+        opacity: 1;
     }
-    
-    .ground {
-        height: 4rem;
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        background-color: #F0DE75;
-    }
-    
-    .sun {
-        position: absolute;
-        top: 1rem;
+}
+
+@keyframes sun {
+    from {
+        top: 2.5rem;
         left: -2rem;
-        background-color: #FFEF00;
-        aspect-ratio: 1 / 1;
-        width: 2rem;
-        border-radius: 50%;
-        animation: sun;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
     }
-    
-    .left-pyr {
-        position: absolute;
-        bottom: 4rem;
-        left: 2rem;
-        width: 6rem;
-        height: 3.5rem;
-        background: #F4F4F4;
-        clip-path: polygon(0% 100%, 60% 100%, 50% 0%);
-        animation: pyramid1;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
+    10% {
+        top: 1rem;
+        left: 1.1rem;
     }
-    
-    .right-pyr {
-        position: absolute;
-        bottom: 4rem;
-        left: 2rem;
-        width: 6rem;
-        height: 3.5rem;
-        background: #F4F4F4;
-        clip-path: polygon(60% 100%, 100% 100%, 50% 0%);
-        animation: pyramid2;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
+    30% {
+        top: 1rem;
+        left: 1.1rem;
     }
-    
-    @keyframes dark {
-        10% {
-            opacity: 1;
-        }
-        85% {
-            opacity: 1;
-        }
+    50% {
+        top: 0rem;
     }
-    
-    @keyframes sun {
-        from {
-            top: 2.5rem;
-            left: -2rem;
-        }
-        10% {
-            top: 1rem;
-            left: 1rem;
-        }
-        30% {
-            top: 1rem;
-            left: 1rem;
-        }
-        50% {
-            top: 0rem;
-        }
-        100% {
-            top: 1.5rem;
-            left: 10rem;
-        }
+    100% {
+        top: 1.5rem;
+        left: 10rem;
     }
-    
-    @keyframes pyramid1 {
-        from {
-            background-color: #F4F4F4;
-        }
-        50% {
-            background-color: #F4F4F4;
-        }
-        to {
-            background-color: lightgray;
-        }
+}
+
+@keyframes pyramid1 {
+    from {
+        background-color: #F4F4F4;
     }
-    
-    @keyframes pyramid2 {
-        from {
-            background-color: lightgray;
-        }
-        20% {
-            background-color: lightgrey;
-        }
-        to {
-            background-color: #f4f4f4;
-        }
+    50% {
+        background-color: #F4F4F4;
     }
+    to {
+        background-color: lightgray;
+    }
+}
+
+@keyframes pyramid2 {
+    from {
+        background-color: lightgray;
+    }
+    20% {
+        background-color: lightgrey;
+    }
+    to {
+        background-color: #f4f4f4;
+    }
+}
+
+@keyframes shadow {
+    20% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+    }
+    90% {
+        clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    }
+    95% {
+        clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+    }
+}
+
+
+}
