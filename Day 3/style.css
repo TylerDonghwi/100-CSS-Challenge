@@ -1,9 +1,44 @@
-.box {
-    background-color: rgb(32, 13, 49);
-    width: 17.5rem;
-    height: 17.5rem;
-    border-radius: 0.33rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .box {
+        background-color: rgb(32, 13, 49);
+        width: 17.5rem;
+        height: 17.5rem;
+        border-radius: 0.33rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sky {
+        position: relative;
+        background-color: #7DDFFC;
+        aspect-ratio: 1 / 1;
+        width: 10rem;
+        border-radius: 50%;
+        clip-path: circle(5rem at 5rem 5rem);
+        animation: dark;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    
+    .ground {
+        height: 60px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-color: #F0DE75;
+    }
+    
+    @keyframes dark {
+        from {
+            opacity: 1;
+        }
+        60% {
+            opacity: 1;
+        }
+        80% {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
