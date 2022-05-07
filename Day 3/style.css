@@ -15,6 +15,9 @@
     width: 10rem;
     border-radius: 50%;
     clip-path: circle(5rem at 5rem 5rem);
+}
+
+.sky:hover {
     animation: dark;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -37,6 +40,9 @@
     aspect-ratio: 1 / 1;
     width: 2rem;
     border-radius: 50%;
+}
+
+.sky:hover .sun {
     animation: sun;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -50,6 +56,9 @@
     height: 3.5rem;
     background: #F4F4F4;
     clip-path: polygon(0% 100%, 60% 100%, 50% 0%);
+}
+
+.sky:hover .left-pyr {
     animation: pyramid1;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -61,8 +70,11 @@
     left: 2rem;
     width: 6rem;
     height: 3.5rem;
-    background: #F4F4F4;
+    background: #e1e1e1;
     clip-path: polygon(60% 100%, 100% 100%, 50% 0%);
+}
+
+.sky:hover .right-pyr {
     animation: pyramid2;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -78,6 +90,9 @@
     height: 3rem;
     transform: skew(90deg, 0);
     transform-origin: top left;
+}
+
+.sky:hover .shadow {
     animation: shadow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -154,7 +169,4 @@
         clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
         transform: skew(90deg, 0);
     }
-}
-
-
 }
