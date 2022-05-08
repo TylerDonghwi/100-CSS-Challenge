@@ -1,0 +1,21 @@
+.box {
+    background-color: #42A7A1;
+    width: 22.5rem;
+    height: 22.5rem;
+    border-radius: 0.33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.card {
+    background-color: #42A7A1;
+    width: 22.5rem;
+    height: 22.5rem;
+    border-radius: 0.33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
